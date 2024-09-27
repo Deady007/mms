@@ -84,7 +84,7 @@ To set up this project, follow these steps:
 
 2. **Create a New Database**
    - Click on the **Databases** tab.
-   - Enter a name for your database (e.g., `money_management_system`) and click **Create**.
+   - Enter a name for your database (e.g., `money_management`) and click **Create**.
 
 3. **Import the SQL File**
    - Download the SQL file from the `SQL` folder in this repository.
@@ -92,6 +92,16 @@ To set up this project, follow these steps:
    - Go to the **Import** tab.
    - Click **Choose File** and select the `MMS.sql` file from the `SQL` folder.
    - Click **Go** to execute the import.
+4.**Update Database Connection**
+
+- Open the includes/db.php file in your project directory and update the database connection settings:
+     ```
+     $host = 'localhost';
+     $username = 'root'; // default username for XAMPP
+     $password = ''; // leave blank if no password is set
+     $database = 'money_management_system'; // or the name you chose
+
+     ```
 
 ### Step 6: Usage
 
